@@ -63,7 +63,7 @@ export default defineConfig([
             },
             'import/resolver': {
                 node: {
-                    extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx'],
+                    extensions: ['.js', '.jsx', '.ts', '.tsx'],
                 },
             },
         },

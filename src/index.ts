@@ -1,1 +1,1 @@
-//exports go here
+export { default } from './eslint.config.mjs'
