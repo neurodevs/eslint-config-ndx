@@ -1,3 +1,5 @@
+import globals from 'globals'
+
 import { defineConfig } from 'eslint/config'
 import prettierConfig from 'eslint-config-prettier'
 
@@ -42,14 +44,9 @@ export default defineConfig([
             ecmaVersion: 'latest',
             sourceType: 'module',
             globals: {
-                log: true,
-                window: true,
-                document: true,
-                navigator: true,
-                FileReader: true,
-                jest: true,
-                node: true,
-                es6: true,
+                ...globals.browser,
+                ...globals.node,
+                ...globals.jest,
             },
         },
         rules: {
