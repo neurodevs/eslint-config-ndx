@@ -56,15 +56,8 @@ export default defineConfig([
             ...defaultFormattingRules,
         },
         settings: {
-            flowtype: {},
             react: {
-                version: '16.6',
-                flowVersion: '0.87',
-            },
-            'import/resolver': {
-                node: {
-                    extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx'],
-                },
+                version: 'detect',
             },
         },
     },
