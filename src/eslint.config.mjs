@@ -39,8 +39,8 @@ export default defineConfig([
             react: esReact,
         },
         languageOptions: {
+            ecmaVersion: 'latest',
             sourceType: 'module',
-            ecmaVersion: 2018,
             globals: {
                 log: true,
                 window: true,
