@@ -22,6 +22,7 @@ const defaultFormattingRules = {
 }
 
 export default defineConfig([
+    prettierConfig,
     {
         ignores: ['build/**'],
         plugins: {
@@ -55,7 +56,6 @@ export default defineConfig([
             parser: esParser,
         },
         rules: {
-            ...prettierConfig.rules,
             '@typescript-eslint/no-unused-vars': [
                 'error',
                 {
