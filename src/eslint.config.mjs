@@ -7,7 +7,6 @@ import esTypescript from '@typescript-eslint/eslint-plugin'
 import esParser from '@typescript-eslint/parser'
 
 import esImport from 'eslint-plugin-import'
-import esPrettier from 'eslint-plugin-prettier'
 import esReact from 'eslint-plugin-react'
 
 const defaultFormattingRules = {
@@ -20,16 +19,6 @@ const defaultFormattingRules = {
     'object-shorthand': ['error', 'always'],
     'react/jsx-no-undef': 'error',
     'react/prop-types': 'off',
-    'prettier/prettier': [
-        'error',
-        {
-            singleQuote: true,
-            useTabs: false,
-            tabWidth: 4,
-            trailingComma: 'es5',
-            semi: false,
-        },
-    ],
 }
 
 export default defineConfig([
@@ -37,7 +26,6 @@ export default defineConfig([
         ignores: ['build/**'],
         plugins: {
             import: esImport,
-            prettier: esPrettier,
             react: esReact,
         },
         languageOptions: {
