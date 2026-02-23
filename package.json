@@ -1,7 +1,8 @@
 {
   "name": "@neurodevs/eslint-config-ndx",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "ESLint flat-config preset for modern Node.js + TypeScript projects",
+  "type": "module",
   "keywords": [
     "nodejs",
     "typescript",
