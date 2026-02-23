@@ -22,7 +22,7 @@ const defaultFormattingRules = {
 }
 
 export default defineConfig([
-    prettierConfig,
+    ...prettierConfig,
     {
         ignores: ['build/**'],
         plugins: {
