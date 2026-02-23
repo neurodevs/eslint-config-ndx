@@ -1,7 +1,7 @@
 import globals from 'globals'
 
 import { defineConfig } from 'eslint/config'
-import prettierConfig from 'eslint-config-prettier'
+import prettierConfig from 'eslint-config-prettier/flat'
 
 import esTypescript from '@typescript-eslint/eslint-plugin'
 import esParser from '@typescript-eslint/parser'
