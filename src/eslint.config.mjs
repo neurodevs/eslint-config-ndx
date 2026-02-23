@@ -9,20 +9,9 @@ import esParser from '@typescript-eslint/parser'
 import esImport from 'eslint-plugin-import'
 import esReact from 'eslint-plugin-react'
 
-const defaultFormattingRules = {
-    curly: 'error',
-    'no-console': 'off',
-    'no-undef': 'off',
-    'no-var': 'error',
-    'no-unreachable': 'error',
-    'no-unused-vars': 'off',
-    'object-shorthand': ['error', 'always'],
-    'react/jsx-no-undef': 'error',
-    'react/prop-types': 'off',
-}
 
 export default defineConfig([
-    ...prettierConfig,
+    [prettierConfig],
     {
         ignores: ['build/**'],
         plugins: {
@@ -38,8 +27,16 @@ export default defineConfig([
                 ...globals.jest,
             },
         },
-        rules: {
-            ...defaultFormattingRules,
+        rules: {   
+            curly: 'error',
+            'no-console': 'off',
+            'no-undef': 'off',
+            'no-var': 'error',
+            'no-unreachable': 'error',
+            'no-unused-vars': 'off',
+            'object-shorthand': ['error', 'always'],
+            'react/jsx-no-undef': 'error',
+            'react/prop-types': 'off',
         },
         settings: {
             react: {
