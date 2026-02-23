@@ -1,9 +1,12 @@
 import globals from 'globals'
 
-import eslintConfig from 'eslint/config'
-const { defineConfig } = eslintConfig
+import { defineConfig } from 'eslint/config'
+import prettierImport from 'eslint-config-prettier/flat'
 
-import prettierConfig from 'eslint-config-prettier/flat'
+const prettierConfig =
+    prettierImport && typeof prettierImport === 'object' && 'default' in prettierImport
+        ? prettierImport.default
+        : prettierImport
 
 import esTypescript from '@typescript-eslint/eslint-plugin'
 import esParser from '@typescript-eslint/parser'
