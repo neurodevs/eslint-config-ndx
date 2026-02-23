@@ -1,6 +1,8 @@
 import globals from 'globals'
 
-import { defineConfig } from 'eslint/config'
+import eslintConfig from 'eslint/config'
+const { defineConfig } = eslintConfig
+
 import prettierConfig from 'eslint-config-prettier/flat'
 
 import esTypescript from '@typescript-eslint/eslint-plugin'
@@ -11,7 +13,7 @@ import esReact from 'eslint-plugin-react'
 
 
 export default defineConfig([
-    [prettierConfig],
+    prettierConfig,
     {
         ignores: ['build/**'],
         plugins: {
