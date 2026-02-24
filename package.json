@@ -1,6 +1,6 @@
 {
     "name": "@neurodevs/eslint-config-ndx",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "ESLint config for the Neurodevs ecosystem",
     "type": "module",
     "keywords": [
@@ -44,6 +44,7 @@
         "@typescript-eslint/eslint-plugin": "^8.56.0",
         "@typescript-eslint/parser": "^8.56.0",
         "eslint": "^9.39.2",
+        "eslint-config-biome": "^2.1.3",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-import": "^2.32.0",
         "eslint-plugin-react": "^7.37.5"

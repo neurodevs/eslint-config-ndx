@@ -1,7 +1,7 @@
 import globals from 'globals'
 
-import { defineConfig } from 'eslint/config'
 import prettierConfig from 'eslint-config-prettier/flat'
+import biomeConfig from 'eslint-config-biome'
 
 import esTypescript from '@typescript-eslint/eslint-plugin'
 import esParser from '@typescript-eslint/parser'
@@ -9,7 +9,7 @@ import esParser from '@typescript-eslint/parser'
 import esImport from 'eslint-plugin-import'
 import esReact from 'eslint-plugin-react'
 
-export default defineConfig([
+export default [
     prettierConfig,
     {
         ignores: ['build/**'],
@@ -70,10 +70,19 @@ export default defineConfig([
         },
     },
     {
-        files: ['*.js'],
+        files: ['**/*.js', '**/*.mjs'],
         plugins: {
-            '@typescript-eslint': esTypescript,
+            import: esImport,
         },
-        rules: Object.assign(esImport.rules),
+        rules: {
+            ...esImport.configs.recommended.rules,
+        },
     },
-])
+    {
+        files: ['**/eslint.config.js'],
+        rules: {
+            'import/no-unresolved': 'off',
+        },
+    },
+    biomeConfig,
+]
