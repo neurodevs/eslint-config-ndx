@@ -1,6 +1,6 @@
 {
     "name": "@neurodevs/eslint-config-ndx",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "ESLint config for the Neurodevs ecosystem",
     "type": "module",
     "keywords": [

@@ -38,11 +38,6 @@ export default [
             'react/prop-types': 'off',
         },
         settings: {
-            'import/resolver': {
-                node: {
-                    extensions: ['.js', '.mjs', '.ts', '.tsx'],
-                },
-            },
             react: {
                 version: 'detect',
             },
@@ -81,6 +76,12 @@ export default [
         },
         rules: {
             ...esImport.configs.recommended.rules,
+        },
+    },
+    {
+        files: ['**/eslint.config.js'],
+        rules: {
+            'import/no-unresolved': 'off',
         },
     },
     biomeConfig,
