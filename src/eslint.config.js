@@ -1,5 +1,4 @@
 import globals from 'globals'
-import time from 'time'
 
 import { defineConfig } from 'eslint/config'
 import prettierConfig from 'eslint-config-prettier/flat'
