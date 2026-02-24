@@ -9,7 +9,6 @@ import esParser from '@typescript-eslint/parser'
 import esImport from 'eslint-plugin-import'
 import esReact from 'eslint-plugin-react'
 
-
 export default defineConfig([
     prettierConfig,
     {
@@ -27,7 +26,7 @@ export default defineConfig([
                 ...globals.jest,
             },
         },
-        rules: {   
+        rules: {
             curly: 'error',
             'no-console': 'off',
             'no-undef': 'off',
