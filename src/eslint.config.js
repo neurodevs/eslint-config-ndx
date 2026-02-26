@@ -1,7 +1,6 @@
 import globals from 'globals'
 
 import prettierConfig from 'eslint-config-prettier/flat'
-import biomeConfig from 'eslint-config-biome'
 
 import esTypescript from '@typescript-eslint/eslint-plugin'
 import esParser from '@typescript-eslint/parser'
@@ -84,5 +83,4 @@ export default [
             'import/no-unresolved': 'off',
         },
     },
-    biomeConfig,
 ]
