@@ -1,4 +1,4 @@
 {
-    "skipped": ["skill"],
-    "installed": ["test"]
+  "skipped": ["skill"],
+  "installed": ["test"]
 }
