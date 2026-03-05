@@ -60,8 +60,6 @@ export default [
                 },
             ],
             '@typescript-eslint/no-empty-interface': 0,
-            // TODO: Remove this if we can; it isn't a good rule to squash.
-            // Sometimes this is fine, but sometimes it masks a compile error.
             '@typescript-eslint/ban-ts-ignore': 0,
             '@typescript-eslint/no-empty-function': 0,
             '@typescript-eslint/explicit-function-return-type': 0,
