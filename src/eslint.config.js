@@ -7,6 +7,7 @@ import esParser from '@typescript-eslint/parser'
 
 import esImport from 'eslint-plugin-import'
 import esReact from 'eslint-plugin-react'
+import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 
 export default [
     prettierConfig,
@@ -15,6 +16,7 @@ export default [
         plugins: {
             import: esImport,
             react: esReact,
+            unicorn: eslintPluginUnicorn,
         },
         languageOptions: {
             ecmaVersion: 'latest',
@@ -35,6 +37,7 @@ export default [
             'object-shorthand': ['error', 'always'],
             'react/jsx-no-undef': 'error',
             'react/prop-types': 'off',
+            'unicorn/prefer-node-protocol': 'error',
         },
         settings: {
             react: {

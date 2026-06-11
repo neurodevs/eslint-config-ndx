@@ -19,8 +19,7 @@
     "allowJs": true,
     "resolveJsonModule": true,
     "experimentalDecorators": true,
-    "moduleResolution": "nodenext",
-    "baseUrl": "src"
+    "moduleResolution": "nodenext"
   },
   "include": ["./src/*.ts", "./src/**/*.ts"]
 }
