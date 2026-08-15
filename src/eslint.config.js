@@ -62,11 +62,25 @@ export default [
                     caughtErrorsIgnorePattern: '^_',
                 },
             ],
+            '@typescript-eslint/no-inferrable-types': 'error',
             '@typescript-eslint/no-empty-interface': 0,
             '@typescript-eslint/ban-ts-ignore': 0,
             '@typescript-eslint/no-empty-function': 0,
             '@typescript-eslint/explicit-function-return-type': 0,
             '@typescript-eslint/no-explicit-any': 0,
+        },
+    },
+    {
+        files: ['**/*.ts', '**/*.tsx'],
+        ignores: ['**/__tests__/**', '**/testDoubles/**'],
+        rules: {
+            '@typescript-eslint/consistent-type-assertions': [
+                'error',
+                {
+                    assertionStyle: 'as',
+                    objectLiteralTypeAssertions: 'never',
+                },
+            ],
         },
     },
     {
