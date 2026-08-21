@@ -29,6 +29,7 @@ export default [
         },
         rules: {
             curly: 'error',
+            'max-params': ['error', 3],
             'no-console': 'off',
             'no-undef': 'off',
             'no-var': 'error',
