@@ -31,6 +31,7 @@ export default [
             curly: 'error',
             'max-params': ['error', 4],
             'no-console': 'off',
+            'no-debugger': 'error',
             'no-undef': 'off',
             'no-var': 'error',
             'no-unreachable': 'error',
